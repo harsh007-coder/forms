@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>forms</title>
+
+<h1>User Input Form</h1>
+
+<form action="action.php">
+<fieldset>
+<legend>Personal Particular</legend>
+<div>
+<label for="name">name</label>
+<input type="text" name="name" id="name" required >
+</div>
+<br>
+<div>
+	<label for="password">password</label>
+	<input type="password" name="password" id="password" required>
+
+</div>
+<br>
+<div>
+	gender:
+	<label for="male">male</label>
+    <input type="radio" name="gender" id="male" value="male">
+
+    <label for="female">female</label>
+    <input type="radio" name="gender" id="female" value="female">
+</div>
+<br>
+<div>
+	<label for="age">Age</label>
+	<input type="number" name="age" id="age" min="15" max="50">
+</div>
+<br>
+<div>
+	<label for="date">birthdate</label>
+	<input type="date" name="date" id="date">
+</div>
+</fieldset>	
+<br>
+<fieldset>
+	<legend>Languages</legend>
+<select name="languages" id="languages">
+<option value="java">java</option>
+<option value="c">c</option>
+<option value="python">python</option>
+</select>
+<label for="checkbox">java</label>
+<input type="checkbox" name="checkbox" id="checkbox">
+<label for="checkbox">c</label>
+<input type="checkbox" name="checkbox" id="checkbox">
+<label for="checkbox">python</label>
+<input type="checkbox" name="checkbox" id="checkbox">
+</fieldset>
+<br>
+<fieldset>
+	<legend>Instruction</legend>
+<textarea name="message"  id="message" placeholder="enter your instruction here..." cols="50" rows="5"></textarea>
+
+</fieldset>
+<br>
+<label for="reset"></label>
+<input type="reset" name="reset" id="reset">
+<button>submit</button>
+
+
+
+</form>
+
+	
+</body>
+</html>
